@@ -27,12 +27,17 @@ struct DetailView: View {
                 .frame(height: 150)
             ZStack{
                 Rectangle()
-                    .foregroundColor(.blue)
+                    .foregroundColor(.cyan)
                     .ignoresSafeArea()
+                Rectangle()
+                    .padding(25)
+                    .foregroundColor(.white)
+                    .frame(height: 600)
                 Rectangle()
                     .foregroundColor(.red)
                     .frame(height: 500)
                     .padding(50)
+                
                     
             }
         }
