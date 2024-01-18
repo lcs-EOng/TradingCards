@@ -7,25 +7,14 @@
 
 import SwiftUI
 
-struct TradinCard {
-    let imageName: String
-    let playerName: String
-    let gamesPlayed: Double
-    let goalsScored: Double
-    let assists: Double
-    let yellowCards: Double
-    let redCards: Double
-    let shots: Double
-    let shotsOnTarget: Double
-    let tackles: Double
-}
+
 struct DetailView: View {
-    var body: some View{
+    var body: some View {
         VStack(alignment: .leading){
             Rectangle()
                 .foregroundColor(.white)
                 .frame(height: 75)
-            Text("  Thierry Henry")
+            Text("   Thierry Henry")
                     .font(.largeTitle)
                     .bold()
                     .foregroundStyle(.black)
@@ -51,9 +40,11 @@ struct DetailView: View {
             
             
         }
+        ZStack{
             Rectangle()
                 .foregroundColor(.white)
                 .frame(height: 200)
+        }
         }
 }
 

@@ -16,15 +16,3 @@ struct TradingCardsApp: App {
     }
 }
 
-let thierryHentry = TradinCard(
-    imageName: "THenry",
-    playerName: "Thierry Henry",
-    gamesPlayed: 258,
-    goalsScored: 175,
-    assists: 74,
-    yellowCards: 30,
-    redCards: 0,
-    shots: 99,
-    shotsOnTarget: 44,
-    tackles: 16
-)

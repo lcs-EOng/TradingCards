@@ -15,8 +15,9 @@ struct PlayerListView: View{
                 
                 //First item
                 NavigationLink(destination: {
-                    DetailView()
                 }, label: {
+                    
+                
                     
                 })
             }
