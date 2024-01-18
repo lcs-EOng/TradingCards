@@ -7,18 +7,27 @@
 
 import SwiftUI
 
-struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+struct TradinCard {
+    let imageName: String
+    let playerName: String
+    let gamesPlayed: Double
+    let gamesStarted: Double
+    let goalsScored: Double
+    let assists: Double
+    let yellowCards: Double
+    let redCards: Double
+    let leagueRanking: String
+}
+struct DetailView: View {
+    var body: some View{
+        VStack{
+            ZStack{
+                Image(systemName: "plus")
+            }
         }
-        .padding()
     }
 }
 
 #Preview {
-    ContentView()
+    DetailView()
 }

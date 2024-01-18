@@ -11,6 +11,8 @@
 		26B8206C2B59AE5C0067524B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B8206B2B59AE5C0067524B /* ContentView.swift */; };
 		26B8206E2B59AE5D0067524B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26B8206D2B59AE5D0067524B /* Assets.xcassets */; };
 		26B820712B59AE5D0067524B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26B820702B59AE5D0067524B /* Preview Assets.xcassets */; };
+		26B820782B59B1630067524B /* PlayerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B820772B59B1630067524B /* PlayerListView.swift */; };
+		26B8207A2B59B32B0067524B /* PlayerStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B820792B59B32B0067524B /* PlayerStats.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		26B8206B2B59AE5C0067524B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		26B8206D2B59AE5D0067524B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		26B820702B59AE5D0067524B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		26B820772B59B1630067524B /* PlayerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerListView.swift; sourceTree = "<group>"; };
+		26B820792B59B32B0067524B /* PlayerStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerStats.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				26B820692B59AE5C0067524B /* TradingCardsApp.swift */,
 				26B8206B2B59AE5C0067524B /* ContentView.swift */,
+				26B820792B59B32B0067524B /* PlayerStats.swift */,
+				26B820772B59B1630067524B /* PlayerListView.swift */,
 				26B8206D2B59AE5D0067524B /* Assets.xcassets */,
 				26B8206F2B59AE5D0067524B /* Preview Content */,
 			);
@@ -137,7 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26B8207A2B59B32B0067524B /* PlayerStats.swift in Sources */,
 				26B8206C2B59AE5C0067524B /* ContentView.swift in Sources */,
+				26B820782B59B1630067524B /* PlayerListView.swift in Sources */,
 				26B8206A2B59AE5C0067524B /* TradingCardsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
