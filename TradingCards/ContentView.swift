@@ -20,9 +20,20 @@ struct TradinCard {
 }
 struct DetailView: View {
     var body: some View{
-        VStack{
+        VStack(alignment: .leading){
+            Text("  Thierry Henry")
+                .font(.largeTitle)
+                .bold()
+                .frame(height: 150)
             ZStack{
-                Image(systemName: "plus")
+                Rectangle()
+                    .foregroundColor(.blue)
+                    .ignoresSafeArea()
+                Rectangle()
+                    .foregroundColor(.red)
+                    .frame(height: 500)
+                    .padding(50)
+                    
             }
         }
     }
