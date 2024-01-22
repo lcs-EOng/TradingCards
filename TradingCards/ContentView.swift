@@ -9,6 +9,9 @@ import SwiftUI
 
 
 struct DetailView: View {
+    
+    let player: TradingCard
+    
     var body: some View {
         VStack(alignment: .leading){
             Rectangle()
@@ -21,7 +24,7 @@ struct DetailView: View {
                     .frame(height: 20)
             ZStack{
                 Rectangle()
-                    .foregroundColor(.cyan)
+                    .foregroundColor(.cyanBlue)
                     .frame(height: 500)
                     .ignoresSafeArea()
                 Rectangle()
@@ -49,5 +52,5 @@ struct DetailView: View {
 }
 
 #Preview {
-    DetailView()
+    DetailView(player: thierryHenry)
 }

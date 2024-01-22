@@ -15,7 +15,10 @@ struct PlayerListView: View{
                 
                 //First item
                 NavigationLink(destination: {
+                    DetailView(player: thierryHenry)
                 }, label: {
+                    
+                    ListView(playerName: "lol", playerNumber: 12, playerDescr: "h")
                     
                 
                     
@@ -23,5 +26,9 @@ struct PlayerListView: View{
             }
         }
     }
+}
+
+#Preview {
+    PlayerListView()
 }
 

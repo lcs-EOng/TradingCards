@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-let thierryHenry = TradingCard(
+var thierryHenry = TradingCard(
     imageName: "THenry",
     playerName: "Thierry Henry",
     gamesPlayed: 258,
