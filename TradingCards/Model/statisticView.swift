@@ -7,10 +7,9 @@
 
 import SwiftUI
  
-struct contentView: View{
-    struct TradingCard {
+struct statisticView: View{
+    //MARK: Stored properties
         let imageName: String
-        let playerName: String
         let gamesPlayed: Double
         let goalsScored: Double
         let assists: Double
@@ -20,7 +19,7 @@ struct contentView: View{
         let shotsOnTarget: Double
         let tackles: Double
         let description: String
-    }
+    
     var thierryHenry = TradingCard(
         imageName: "THenry",
         playerName: "Thierry Henry",
@@ -36,21 +35,36 @@ struct contentView: View{
     )
 
 
-    var body: some View{
-        ZStack{
-            Rectangle()
-                .foregroundColor(.white)
 
-            
-            
+    var body: some View{
+        VStack{
+            ZStack{
+                Rectangle()
+                    .foregroundColor(.white)
+                
+                
+                
+            }
+            Text(imageName)
         }
     }
-}
+    }
+
 
 
 
 
 #Preview{
-    contentView()
+    statisticView(imageName: "THenry",
+                gamesPlayed: 258,
+                goalsScored: 175,
+                assists: 74,
+                yellowCards: 30,
+                redCards: 0,
+                shots: 99,
+                shotsOnTarget: 44,
+                tackles: 16,
+                description: "Thierry Henry is best known for his time at Arsenal, particular the 2005-2006 'Invincible' season, where they won the league undefeated")
         
 }
+
