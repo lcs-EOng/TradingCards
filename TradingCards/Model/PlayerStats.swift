@@ -22,7 +22,7 @@ var thierryHenry = TradingCard(
 )
 
 var dennisBergkamp = TradingCard(
-    imageName: "maybe",
+    imageName: "DBerg",
     playerName: "Dennis Bergkamp",
     gamesPlayed:315 ,
     goalsScored: 87,

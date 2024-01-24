@@ -19,9 +19,9 @@ struct DetailView: View {
     let assists: Int
     let yellowCards: Int
     let redCards: Int
-    let shots: Int
-    let shotsOnTarget: Int
-    let tackles: Int
+    let nationality: String
+    let position: String
+    let dateOfBirth: String
     let description: String
     
     let player: TradingCard
@@ -54,9 +54,9 @@ struct DetailView: View {
                 assists: assists,
                 yellowCards: yellowCards,
                 redCards: redCards,
-                shots: shots,
-                shotsOnTarget: shotsOnTarget,
-                tackles: tackles,
+                nationality: nationality,
+                position: position,
+                dateOfBirth: dateOfBirth,
                 description: description
             )
         }
@@ -72,9 +72,9 @@ struct DetailView: View {
         assists: 11,
         yellowCards: 1,
         redCards: 1,
-        shots: 1,
-        shotsOnTarget: 1,
-        tackles: 1,
+        nationality: "France",
+        position: "Striker",
+        dateOfBirth: "05/05",
         description: "lol",
         player: thierryHenry
     )

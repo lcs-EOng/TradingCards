@@ -18,9 +18,9 @@ struct statisticView: View{
     let assists: Int
     let yellowCards: Int
     let redCards: Int
-    let shots: Int
-    let shotsOnTarget: Int
-    let tackles: Int
+    let nationality: String
+    let position: String
+    let dateOfBirth: String
     let description: String
     
     
@@ -69,28 +69,28 @@ struct statisticView: View{
                 }
                 Spacer()
                 VStack{
-                    Text("Shots")
+                    Text("Nationality")
                         .fontWeight(.semibold)
 
-                    Text("\(shots)")
+                    Text(nationality)
                 }
                 
             }
             .padding(10)
             HStack{
                 VStack{
-                    Text("Shots")
+                    Text("Position")
                         .fontWeight(.semibold)
+                    Text(position)
 
-                    Text("\(shots)")
                 }
                 Spacer()
                     .frame(width: 30)
                 VStack{
-                    Text("Tackles")
+                    Text("Date Of Birth")
                         .fontWeight(.semibold)
 
-                    Text("\(tackles)")
+                    Text(dateOfBirth)
                 }
                 Spacer()
                     .frame(width: 30)
@@ -132,9 +132,9 @@ struct statisticView: View{
                 assists: 74,
                 yellowCards: 30,
                 redCards: 0,
-                shots: 99,
-                shotsOnTarget: 44,
-                tackles: 16,
+                nationality: "France",
+                  position: "Striker",
+                  dateOfBirth: "idk",
                 description: "Thierry Henry is best known for his time at Arsenal, particular the 2005-2006 'Invincible' season, where they won the league undefeated")
         
 }

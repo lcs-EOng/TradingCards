@@ -19,9 +19,9 @@ struct TradingCardsApp: App {
                 assists: 11,
                 yellowCards: 1,
                 redCards: 1,
-                shots: 1,
-                shotsOnTarget: 1,
-                tackles: 1,
+                nationality: "Netherlands",
+                position: "Attacking Midfielder",
+                dateOfBirth: "idk",
                 description: "lol",
                 player: thierryHenry
             )        }
