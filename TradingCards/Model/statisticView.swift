@@ -48,49 +48,49 @@ struct statisticView: View{
                 .bold()
             HStack{
                 VStack{
-                    Text("Games Played")
+                    Text("Nationality")
                         .fontWeight(.semibold)
-                    Text("\(gamesPlayed)")
+                    Text(nationality)
                 }
             Spacer()
                 VStack{
-                    Text("Goals Scored")
+                    Text("Position")
                         .fontWeight(.semibold)
 
-                    Text("\(goalsScored)")
+                    Text("Striker")
                 }
                 Spacer()
                 
                 VStack{
-                    Text("Assists")
+                    Text("Date Of Birth")
                         .fontWeight(.semibold)
 
-                    Text("\(assists)")
+                    Text(dateOfBirth)
                 }
                 Spacer()
                 VStack{
-                    Text("Nationality")
+                    Text("Games")
                         .fontWeight(.semibold)
 
-                    Text(nationality)
+                    Text("\(gamesPlayed)")
                 }
                 
             }
             .padding(10)
             HStack{
                 VStack{
-                    Text("Position")
+                    Text("Goals")
                         .fontWeight(.semibold)
-                    Text(position)
+                    Text("\(goalsScored)")
 
                 }
                 Spacer()
                     .frame(width: 30)
                 VStack{
-                    Text("Date Of Birth")
+                    Text("Assists")
                         .fontWeight(.semibold)
 
-                    Text(dateOfBirth)
+                    Text("\(assists)")
                 }
                 Spacer()
                     .frame(width: 30)

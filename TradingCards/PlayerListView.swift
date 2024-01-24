@@ -15,7 +15,7 @@ struct PlayerListView: View{
                     VStack {
                         Divider()
                             .background(
-                                LinearGradient(colors: [.cyan, .darkBlue],
+                                LinearGradient(colors: [.red, .white],
                                                startPoint: .leading,
                                                endPoint: .trailing)
                                 .shadow(.drop(radius: 2, y: 2)),
@@ -41,7 +41,7 @@ struct PlayerListView: View{
                                         redCards: 0,
                                         nationality: "France",
                                         position: "Striker",
-                                        dateOfBirth: "05/05",
+                                        dateOfBirth: "17/08/1977",
                                         description: "Thierry Henry is best known for his time at Arsenal, particular the 2005-2006 'Invincible' season, where they won the league undefeated", player: thierryHenry
                                     )
                                 }, label: {
@@ -62,7 +62,7 @@ struct PlayerListView: View{
                                         redCards: 1,
                                         nationality: "Netherlands",
                                         position: "Attacking Midfielder",
-                                        dateOfBirth: "idk",
+                                        dateOfBirth: "10/05/1969",
                                         description: "Famous arsenal winger/midifielder",
                                         player: dennisBergkamp
                                     )
@@ -72,14 +72,36 @@ struct PlayerListView: View{
                                              playerPic: "DBerg")})
                                 .listRowBackground(Color.aRed)
                                 
+                                //Third Item
+                                NavigationLink(destination: {
+                                    DetailView(
+                                        playerName: "Patrick Vieira",
+                                        playerPic: "pVieira",
+                                        gamesPlayed: 307 ,
+                                        goalsScored: 31,
+                                        assists: 34,
+                                        yellowCards: 76,
+                                        redCards: 8,
+                                        nationality: "France",
+                                        position: "Defensive Midfielder",
+                                        dateOfBirth: "23/06/1976",
+                                        description: "Famous arsenal winger/midifielder",
+                                        player: patrickVieira
+                                    )
+                                }, label: {
+                                    
+                                    ListView(playerName: "Patrick Vieira", playerNumber: "#4", playerDescr: "Famous Arsenal player",
+                                             playerPic: "pVieira")})
+                                .listRowBackground(Color.aRed)
+                                
                             }
                                 .listStyle(.plain)
                                 .background(
-                                    LinearGradient(colors: [.cyan, .darkBlue],
+                                    LinearGradient(colors: [.red, .white],
                                                    startPoint: .leading,
                                                    endPoint: .trailing)
                                     .shadow(.drop(radius: 2, y: 2)))
-                                .navigationTitle("Legendary PL Player")}
+                                .navigationTitle("Arsenal in the 2000s")}
                         
                         
                     }

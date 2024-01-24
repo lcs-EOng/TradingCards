@@ -34,3 +34,18 @@ var dennisBergkamp = TradingCard(
     tackles: 0,
     description: "Famous arsenal winger/midifielder"
 )
+
+var patrickVieira = TradingCard(
+    imageName: "DBerg",
+    playerName: "Dennis Bergkamp",
+    gamesPlayed:315 ,
+    goalsScored: 87,
+    assists: 94,
+    yellowCards: 40,
+    redCards: 1,
+    shots: 0,
+    shotsOnTarget: 0,
+    tackles: 0,
+    description: "Famous arsenal winger/midifielder"
+)
+
