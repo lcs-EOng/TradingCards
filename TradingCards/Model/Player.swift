@@ -10,13 +10,13 @@ import SwiftUI
 struct TradingCard {
     let imageName: String
     let playerName: String
-    let gamesPlayed: Double
-    let goalsScored: Double
-    let assists: Double
-    let yellowCards: Double
-    let redCards: Double
-    let shots: Double
-    let shotsOnTarget: Double
-    let tackles: Double
+    let gamesPlayed: Int
+    let goalsScored: Int
+    let assists: Int
+    let yellowCards: Int
+    let redCards: Int
+    let shots: Int
+    let shotsOnTarget: Int
+    let tackles: Int
     let description: String
 }

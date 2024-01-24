@@ -11,8 +11,20 @@ import SwiftUI
 struct TradingCardsApp: App {
     var body: some Scene {
         WindowGroup {
-            DetailView(player: thierryHenry)
-        }
+            DetailView(
+                playerName: "T",
+                playerPic: "THenry",
+                gamesPlayed: 1,
+                goalsScored: 1,
+                assists: 11,
+                yellowCards: 1,
+                redCards: 1,
+                shots: 1,
+                shotsOnTarget: 1,
+                tackles: 1,
+                description: "lol",
+                player: thierryHenry
+            )        }
     }
 }
 

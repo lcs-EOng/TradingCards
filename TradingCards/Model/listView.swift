@@ -11,22 +11,27 @@ struct ListView: View {
     
     // MARK: Stored properties
     let playerName: String
-    let playerNumber: Double
+    let playerNumber: String
     let playerDescr: String
+    let playerPic: String
     
     // MARK: Computed properties
     var body: some View {
         HStack {
             
-            Image(systemName: "plus")
+            Image(playerPic)
                 .resizable()
                 .scaledToFit()
-                .frame(width: 25)
+                .frame(height: 40)
                 .padding(.trailing, 15)
-            
+            Text(playerNumber)
+                .font(.headline)
+                .frame(width: 30)
             VStack {
                 VStack(alignment: .leading) {
                     Text(playerName)
+                        .font(.title2)
+                    Text(playerDescr)
                         .font(.headline)
                 }
             }
@@ -36,6 +41,6 @@ struct ListView: View {
 }
 
 #Preview {
-    ListView(playerName: "Henry", playerNumber: 15, playerDescr: "lol")
+    ListView(playerName: "Henry", playerNumber: "15", playerDescr: "lol", playerPic: "THenry")
 }
 

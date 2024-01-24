@@ -10,47 +10,72 @@ import SwiftUI
 
 struct DetailView: View {
     
+    //MARK: Properties
+    
+    let playerName: String
+    let playerPic: String
+    let gamesPlayed: Int
+    let goalsScored: Int
+    let assists: Int
+    let yellowCards: Int
+    let redCards: Int
+    let shots: Int
+    let shotsOnTarget: Int
+    let tackles: Int
+    let description: String
+    
     let player: TradingCard
     
     var body: some View {
         VStack(alignment: .leading){
-            Rectangle()
-                .foregroundColor(.white)
-                .frame(height: 75)
-            Text("   Thierry Henry")
-                    .font(.largeTitle)
-                    .bold()
-                    .foregroundStyle(.black)
-                    .frame(height: 20)
             ZStack{
                 Rectangle()
                     .foregroundColor(.cyanBlue)
-                    .frame(height: 500)
                     .ignoresSafeArea()
-                Rectangle()
-                    .padding(25)
-                    .foregroundColor(.white)
-                    .frame(height: 500)
-                Rectangle()
-                    .foregroundColor(.darkBlue)
-                    .frame(height: 420)
-                    .padding(50)
-                Rectangle()
-                    .padding(100)
-                    .foregroundColor(.white)
-                    .frame(height: 550)
+                    .overlay (
+                        VStack(alignment: .leading){
+                            Text(playerName)
+                                .foregroundColor(.black)
+                                .font(.title)
+                                .fontWeight(.heavy)
+                            
+                            Image(playerPic)
+                                .resizable()
+                                .scaledToFit()
+                            Spacer()
+                        }
+                    )
             }
-            
-            
+            statisticView(
+                imageName: "hi",
+                playerName: "T",
+                gamesPlayed: gamesPlayed,
+                goalsScored: goalsScored,
+                assists: assists,
+                yellowCards: yellowCards,
+                redCards: redCards,
+                shots: shots,
+                shotsOnTarget: shotsOnTarget,
+                tackles: tackles,
+                description: description
+            )
         }
-        ZStack{
-            Rectangle()
-                .foregroundColor(.white)
-                .frame(height: 200)
-        }
-        }
+    }
 }
 
 #Preview {
-    DetailView(player: thierryHenry)
+    DetailView(
+        playerName: "T",
+        playerPic: "THenry",
+        gamesPlayed: 1,
+        goalsScored: 1,
+        assists: 11,
+        yellowCards: 1,
+        redCards: 1,
+        shots: 1,
+        shotsOnTarget: 1,
+        tackles: 1,
+        description: "lol",
+        player: thierryHenry
+    )
 }

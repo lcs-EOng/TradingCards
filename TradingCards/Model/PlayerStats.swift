@@ -21,3 +21,16 @@ var thierryHenry = TradingCard(
     description: "Thierry Henry is best known for his time at Arsenal, particular the 2005-2006 'Invincible' season, where they won the league undefeated"
 )
 
+var dennisBergkamp = TradingCard(
+    imageName: "maybe",
+    playerName: "Dennis Bergkamp",
+    gamesPlayed:315 ,
+    goalsScored: 87,
+    assists: 94,
+    yellowCards: 40,
+    redCards: 1,
+    shots: 0,
+    shotsOnTarget: 0,
+    tackles: 0,
+    description: "Famous arsenal winger/midifielder"
+)

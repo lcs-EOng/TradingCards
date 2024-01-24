@@ -9,20 +9,76 @@ import SwiftUI
 
 struct PlayerListView: View{
     var body: some View{
-        
         NavigationStack{
-            List{
-                
-                //First item
-                NavigationLink(destination: {
-                    DetailView(player: thierryHenry)
-                }, label: {
+            VStack{
+                NavigationStack {
+                    VStack {
+                        Divider()
+                            .background(
+                                LinearGradient(colors: [.cyan, .darkBlue],
+                                               startPoint: .leading,
+                                               endPoint: .trailing)
+                                .shadow(.drop(radius: 2, y: 2)),
+                                ignoresSafeAreaEdges: .top)
+                    }
                     
-                    ListView(playerName: "lol", playerNumber: 12, playerDescr: "h")
-                    
-                
-                    
-                })
+                    ZStack{
+                        Color.cyan.opacity(0.25)
+                        
+                            .ignoresSafeArea()
+                        
+                        VStack(alignment: .leading){
+                            List{
+                                //First item
+                                NavigationLink(destination: {
+                                    DetailView(
+                                        playerName: "Thierry Henry",
+                                        playerPic: "THenry",
+                                        gamesPlayed: 150,
+                                        goalsScored: 175,
+                                        assists: 74,
+                                        yellowCards: 30,
+                                        redCards: 0,
+                                        shots: 99,
+                                        shotsOnTarget: 44,
+                                        tackles: 16,
+                                        description: "Thierry Henry is best known for his time at Arsenal, particular the 2005-2006 'Invincible' season, where they won the league undefeated", player: thierryHenry
+                                    )
+                                }, label: {
+                                    
+                                    ListView(playerName: "Thierry Henry", playerNumber: "#14", playerDescr: "Famous Arsenal player",
+                                             playerPic: "THenry")
+                                    
+                                    
+                                    
+                                    
+                                    
+                                })
+                                NavigationLink(destination: {
+                                    DetailView(
+                                        playerName: "Dennis Bergkamp",
+                                        playerPic: "TTT",
+                                        gamesPlayed:315 ,
+                                        goalsScored: 87,
+                                        assists: 94,
+                                        yellowCards: 40,
+                                        redCards: 1,
+                                        shots: 0,
+                                        shotsOnTarget: 0,
+                                        tackles: 0,
+                                        description: "Famous arsenal winger/midifielder",
+                                        player: dennisBergkamp
+                                    )
+                                }, label: {
+                                    
+                                    ListView(playerName: "Dennis Bergkamp", playerNumber: "#10", playerDescr: "Famous Arsenal player",
+                                             playerPic: "TTT")}
+                                )}
+                            .navigationTitle("Legendary PL Player")
+                            
+                        }
+                    }
+                }
             }
         }
     }
