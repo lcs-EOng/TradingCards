@@ -26,7 +26,7 @@ struct ListView: View {
                 .padding(.trailing, 15)
             Text(playerNumber)
                 .font(.headline)
-                .frame(width: 30)
+                .frame(width: 35)
             VStack {
                 VStack(alignment: .leading) {
                     Text(playerName)

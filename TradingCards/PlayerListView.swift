@@ -93,6 +93,49 @@ struct PlayerListView: View{
                                     ListView(playerName: "Patrick Vieira", playerNumber: "#4", playerDescr: "Famous Arsenal player",
                                              playerPic: "pVieira")})
                                 .listRowBackground(Color.aRed)
+                                //Forth Item
+                                NavigationLink(destination: {
+                                    DetailView(
+                                        playerName: "Sol Campbell",
+                                        playerPic: "SCamp",
+                                        gamesPlayed: 146 ,
+                                        goalsScored: 8,
+                                        assists: 4,
+                                        yellowCards: 12,
+                                        redCards: 3,
+                                        nationality: "England",
+                                        position: "Centerback",
+                                        dateOfBirth: "18/09/1974",
+                                        description: "Famous arsenal defender",
+                                        player: patrickVieira
+                                    )
+                                }, label: {
+                                    
+                                    ListView(playerName: "Sol Campbell", playerNumber: "#23", playerDescr: "Famous Arsenal player",
+                                             playerPic: "SCamp")})
+                                .listRowBackground(Color.aRed)
+                                
+                                //Fifth Item
+                                NavigationLink(destination: {
+                                    DetailView(
+                                        playerName: "Jens Lehmann",
+                                        playerPic: "JLeh",
+                                        gamesPlayed: 148 ,
+                                        goalsScored: 0,
+                                        assists: 0,
+                                        yellowCards: 12,
+                                        redCards: 0,
+                                        nationality: "Germany",
+                                        position: "Centerback",
+                                        dateOfBirth: "10/11/1969",
+                                        description: "Famous arsenal goalkeeper",
+                                        player: patrickVieira
+                                    )
+                                }, label: {
+                                    
+                                    ListView(playerName: "Jens Lehmann", playerNumber: "#1", playerDescr: "Famous Arsenal player",
+                                             playerPic: "JLeh")})
+                                .listRowBackground(Color.aRed)
                                 
                             }
                                 .listStyle(.plain)
