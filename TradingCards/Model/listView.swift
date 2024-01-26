@@ -9,29 +9,23 @@ import SwiftUI
 
 struct ListView: View {
     
-    // MARK: Stored properties
-    let playerName: String
-    let playerNumber: String
-    let playerDescr: String
-    let playerPic: String
+    let player: TradingCard
     
     // MARK: Computed properties
     var body: some View {
         HStack {
             
-            Image(playerPic)
+            Image(player.imageName)
                 .resizable()
                 .scaledToFit()
                 .frame(height: 40)
                 .padding(.trailing, 15)
-            Text(playerNumber)
-                .font(.headline)
-                .frame(width: 35)
+            
             VStack {
                 VStack(alignment: .leading) {
-                    Text(playerName)
+                    Text(player.playerName)
                         .font(.title2)
-                    Text(playerDescr)
+                    Text(player.dateOfBirth)
                         .font(.headline)
                 }
             }
@@ -41,6 +35,6 @@ struct ListView: View {
 }
 
 #Preview {
-    ListView(playerName: "Henry", playerNumber: "15", playerDescr: "lol", playerPic: "THenry")
+    ListView(player: thierryHenry)
 }
 

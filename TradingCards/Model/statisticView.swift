@@ -10,36 +10,8 @@ import SwiftUI
 
 
 struct statisticView: View{
-    //MARK: Stored properties
-    let imageName: String
-    let playerName: String
-    let gamesPlayed: Int
-    let goalsScored: Int
-    let assists: Int
-    let yellowCards: Int
-    let redCards: Int
-    let nationality: String
-    let position: String
-    let dateOfBirth: String
-    let description: String
     
-    
-    
-    var thierryHenry = TradingCard(
-        imageName: "THenry",
-        playerName: "Thierry Henry",
-        gamesPlayed: 150,
-        goalsScored: 175,
-        assists: 74,
-        yellowCards: 30,
-        redCards: 0,
-        shots: 99,
-        shotsOnTarget: 44,
-        tackles: 16,
-        description: "Thierry Henry is best known for his time at Arsenal, particular the 2005-2006 'Invincible' season, where they won the league undefeated"
-    )
-    
-    
+    let player: TradingCard
     
     var body: some View{
         VStack(alignment: .leading){
@@ -50,14 +22,14 @@ struct statisticView: View{
                 VStack{
                     Text("Nationality")
                         .fontWeight(.semibold)
-                    Text(nationality)
+                    Text(player.nationality)
                 }
             Spacer()
                 VStack{
                     Text("Position")
                         .fontWeight(.semibold)
 
-                    Text("Striker")
+                    Text(player.position)
                 }
                 Spacer()
                 
@@ -65,14 +37,14 @@ struct statisticView: View{
                     Text("Date Of Birth")
                         .fontWeight(.semibold)
 
-                    Text(dateOfBirth)
+                    Text(player.dateOfBirth)
                 }
                 Spacer()
                 VStack{
                     Text("Games")
                         .fontWeight(.semibold)
 
-                    Text("\(gamesPlayed)")
+                    Text("\(player.gamesPlayed)")
                 }
                 
             }
@@ -81,7 +53,7 @@ struct statisticView: View{
                 VStack{
                     Text("Goals")
                         .fontWeight(.semibold)
-                    Text("\(goalsScored)")
+                    Text("\(player.goalsScored)")
 
                 }
                 Spacer()
@@ -90,7 +62,7 @@ struct statisticView: View{
                     Text("Assists")
                         .fontWeight(.semibold)
 
-                    Text("\(assists)")
+                    Text("\(player.assists)")
                 }
                 Spacer()
                     .frame(width: 30)
@@ -98,7 +70,7 @@ struct statisticView: View{
                     Text("Yellow Cards")
                         .fontWeight(.semibold)
 
-                    Text("\(yellowCards)")
+                    Text("\(player.yellowCards)")
                 }
                 Spacer()
                     .frame(width: 30)
@@ -106,7 +78,7 @@ struct statisticView: View{
                     Text("Red Cards")
                         .fontWeight(.semibold)
 
-                    Text("\(redCards)")
+                    Text("\(player.redCards)")
                 }
             }
             Spacer()
@@ -115,7 +87,7 @@ struct statisticView: View{
                 .font(.title)
                 .bold()
                 .padding()
-            Text(description)
+            Text(player.description)
         }
     }
 }
@@ -125,17 +97,7 @@ struct statisticView: View{
 
 
 #Preview{
-    statisticView(imageName: "THenry",
-                  playerName: "Thierry Henry",
-                  gamesPlayed: 258,
-                goalsScored: 175,
-                assists: 74,
-                yellowCards: 30,
-                redCards: 0,
-                nationality: "France",
-                  position: "Striker",
-                  dateOfBirth: "idk",
-                description: "Thierry Henry is best known for his time at Arsenal, particular the 2005-2006 'Invincible' season, where they won the league undefeated")
+    statisticView(player: thierryHenry)
         
 }
 
