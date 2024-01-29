@@ -21,6 +21,7 @@ import Foundation
         let position: String
         let dateOfBirth: String
         let description: String
+        let number: String
     }
 
 let thierryHenry = TradingCard(
@@ -34,7 +35,8 @@ let thierryHenry = TradingCard(
     nationality: "France",
     position: "st",
     dateOfBirth: "int",
-    description: "Thierry Henry is best known for his time at Arsenal, particular the 2005-2006 'Invincible' season, where they won the league undefeated"
+    description: "Thierry Henry is best known for his time at Arsenal, particular the 2005-2006 'Invincible' season, where they won the league undefeated",
+    number: "#14"
 )
 let dennisBergkamp = TradingCard(
     imageName: "DBerg",
@@ -47,7 +49,8 @@ let dennisBergkamp = TradingCard(
     nationality: "Netherlands",
     position: "Attacking midfielder",
     dateOfBirth: "int",
-    description: "Thierry Henry is best known for his time at Arsenal, particular the 2005-2006 'Invincible' season, where they won the league undefeated"
+    description: "Thierry Henry is best known for his time at Arsenal, particular the 2005-2006 'Invincible' season, where they won the league undefeated",
+    number: "#10"
 )
 
 let patrickVieira = TradingCard(
@@ -61,7 +64,8 @@ let patrickVieira = TradingCard(
     nationality: "France",
     position: "Defensive Midfielder",
     dateOfBirth: "int",
-    description: "Thierry Henry is best known for his time at Arsenal, particular the 2005-2006 'Invincible' season, where they won the league undefeated"
+    description: "Thierry Henry is best known for his time at Arsenal, particular the 2005-2006 'Invincible' season, where they won the league undefeated",
+    number: "#4"
 )
 
 let solCampbell = TradingCard(
@@ -75,7 +79,8 @@ let solCampbell = TradingCard(
     nationality: "England",
     position: "Centerback",
     dateOfBirth: "int",
-    description: "Thierry Henry is best known for his time at Arsenal, particular the 2005-2006 'Invincible' season, where they won the league undefeated"
+    description: "Thierry Henry is best known for his time at Arsenal, particular the 2005-2006 'Invincible' season, where they won the league undefeated",
+    number: "#23"
 )
 
 let jensLehmann = TradingCard(
@@ -89,7 +94,8 @@ let jensLehmann = TradingCard(
     nationality: "Germany",
     position: "Goakeeper",
     dateOfBirth: "int",
-    description: "Thierry Henry is best known for his time at Arsenal, particular the 2005-2006 'Invincible' season, where they won the league undefeated"
+    description: "Thierry Henry is best known for his time at Arsenal, particular the 2005-2006 'Invincible' season, where they won the league undefeated",
+    number: "#1"
     )
 
 let allPlayers = [thierryHenry, dennisBergkamp, patrickVieira, solCampbell, jensLehmann]

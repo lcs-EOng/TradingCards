@@ -25,7 +25,7 @@ struct ListView: View {
                 VStack(alignment: .leading) {
                     Text(player.playerName)
                         .font(.title2)
-                    Text(player.dateOfBirth)
+                    Text(player.number)
                         .font(.headline)
                 }
             }

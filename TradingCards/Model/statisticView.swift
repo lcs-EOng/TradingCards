@@ -28,6 +28,7 @@ struct statisticView: View{
                 VStack{
                     Text("Position")
                         .fontWeight(.semibold)
+                     
 
                     Text(player.position)
                 }
@@ -97,7 +98,7 @@ struct statisticView: View{
 
 
 #Preview{
-    statisticView(player: thierryHenry)
+    statisticView(player: dennisBergkamp)
         
 }
 
